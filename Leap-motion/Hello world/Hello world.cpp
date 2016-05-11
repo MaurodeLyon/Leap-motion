@@ -31,11 +31,16 @@ void SampleListener::onFrame(const Controller& controller)
 	auto pointables = frame.pointables();
 	auto fingers = frame.fingers();
 	auto tools = frame.tools();
+
+	auto frontHand = hands.frontmost();
+	auto handPosition = frontHand.palmPosition();
+	std::cout << "X: " << int (handPosition.x) << " Y: " << int ( handPosition.y) << " Z: " << int(handPosition.z) << std::endl;
+	
 	//display hand info
 	//std::cout << "hands: " << hands.count() << " pointables: " << pointables.count() << " fingers: " << fingers.count() << " tools: " << tools.count() << std::endl;
 
 	//display gestures
-	auto circle = 0;
+	/*auto circle = 0;
 	auto swipe = 0;
 	auto keytap = 0;
 	auto screentap = 0;
@@ -63,9 +68,9 @@ void SampleListener::onFrame(const Controller& controller)
 			//Handle unrecognized gestures
 			break;
 		}
-	}
-	std::cout << "Circle: " << circle << "\t swipe: " << swipe << "\t keytap: " << keytap << "\t screentap: " << screentap << std::endl;
-	
+		std::cout << "Circle: " << circle << "\t swipe: " << swipe << "\t keytap: " << keytap << "\t screentap: " << screentap << std::endl;
+	}*/
+
 	//displayframe info
 	/*std::cout << "Frame id: " << frame.id() << ", timestamp: " << frame.timestamp() << ", hands: " << frame.hands().count() << ", fingers: " << frame.fingers().count() << ", tools: " << frame.tools().count() << ", gestures: " << frame.gestures().count() << std::endl;
 	for each(Hand hand in frame.hands())
