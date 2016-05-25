@@ -9,8 +9,7 @@
 
 #include <stdio.h>
 #include <tchar.h>
-
-#include "Leap.h"
+#include "include/Leap.h"
 
 #include <iostream>
 #include <vector>

@@ -1,5 +1,2 @@
-﻿  stdafx.cpp
-  LeapInput.cpp
-  Hello World.cpp
-c:\users\mauro\documents\github\leap-motion\orion\hello world\hello world.cpp(10): error C2664: 'bool Leap::Controller::addListener(Leap::Listener &)': cannot convert argument 1 from 'LeapInput' to 'Leap::Listener &'
-  Generating Code...
+﻿  Hello World.cpp
+  Hello World.vcxproj -> C:\Users\mauro\Documents\GitHub\Leap-motion\Orion\Debug\Hello World.exe

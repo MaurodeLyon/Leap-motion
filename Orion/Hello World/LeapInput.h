@@ -1,5 +1,5 @@
 #pragma once
-class LeapInput
+class LeapInput : public Leap::Listener
 {
 public:
 	LeapInput();

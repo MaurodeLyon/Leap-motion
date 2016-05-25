@@ -10,6 +10,7 @@ int main()
 	auto listener = LeapInput();
 	controller.addListener(listener);
 	std::cout << "Hello world" << std::endl;
+	while (true);
     return 0;
 }
 

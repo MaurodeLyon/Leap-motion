@@ -1,8 +1,6 @@
 #include "stdafx.h"
 #include "LeapInput.h"
 
-#include "stdafx.h"
-
 using namespace Leap;
 
 void onConnect(const Controller& controller)
